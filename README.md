@@ -1,38 +1,31 @@
-# 🛡️ CyberKit Mohamed
+# Outils de Securite Reseau
 
-> Penetration Testing & Network Audit Toolkit — by [@ibramoha2](https://github.com/ibramoha2)
+> Scripts Python educatifs pour l'analyse reseau et la securite defensive.
 
-```
-  ____      _               _  ___ _   
- / ___|   _| |__   ___ _ __| |/ (_) |_ 
-| |  | | | | '_ \ / _ \ '__| ' /| | __|
-| |__| |_| | |_) |  __/ |  | . \| | |_ 
- \____\__, |_.__/ \___|_|  |_|\_\_|\__|
-```
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python)
+![Author](https://img.shields.io/badge/Author-ibramoha2-CC0000?style=flat-square)
 
-## ⚠️ Usage légal uniquement — Authorized testing only
+> Pour usage ethique uniquement — sur vos propres systemes ou avec autorisation.
 
-## 🔧 Fonctionnalités
-
-| Module | Description |
-|--------|-------------|
-| 🔍 Nmap Scan | basic / full / vuln / udp / stealth / web |
-| 🌐 DNS Recon | A, MX, NS, TXT records |
-| 📋 WHOIS | Lookup domaine/IP |
-| 🌍 HTTP Headers | Analyse des entêtes HTTP |
-| 🔒 SSL Check | Vérification certificat SSL |
-| 🚪 Port Check | Test d'ouverture de port |
-| 📄 Rapports | Sauvegarde automatique |
-
-## 🚀 Installation
-
+## Installation
 ```bash
 git clone https://github.com/ibramoha2/cyberkit-mohamed
 cd cyberkit-mohamed
 pip install -r requirements.txt
-python3 cyberkit.py
 ```
 
-## 👤 Auteur
+## Outils
 
-**Mohamed Adoungouss Ibrahim** | DUT Cybersécurité | Niger 🇳🇪
+| Outil | Description |
+|-------|-------------|
+| `port_scanner.py` | Scanner de ports TCP multi-thread |
+| `log_analyzer.py` | Analyse de logs SSH (detection brute-force) |
+| `banner_grab.py` | Banner grabbing sur services reseau |
+
+## Usage
+```bash
+python port_scanner.py -t 127.0.0.1 -p 1-1024
+python log_analyzer.py -f /var/log/auth.log
+```
+
+**Auteur :** [@ibramoha2](https://github.com/ibramoha2) | Niger
