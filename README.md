@@ -1,31 +1,32 @@
-# Outils de Securite Reseau
+# 🛠️ cyberkit-mohamed
 
-> Scripts Python educatifs pour l'analyse reseau et la securite defensive.
+Lightweight **Python toolkit** for network auditing and pentest labs.
 
-![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python)
-![Author](https://img.shields.io/badge/Author-ibramoha2-CC0000?style=flat-square)
+## Modules
 
-> Pour usage ethique uniquement — sur vos propres systemes ou avec autorisation.
+- Port scanning helpers
+- Log analysis utilities
+- Simple CLI entrypoint
 
-## Installation
+## Quick start
+
 ```bash
-git clone https://github.com/ibramoha2/cyberkit-mohamed
+git clone https://github.com/Life-Is-Nothing/cyberkit-mohamed.git
 cd cyberkit-mohamed
+python3 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
+python cyberkit.py --help
 ```
 
-## Outils
+## Related
 
-| Outil | Description |
-|-------|-------------|
-| `port_scanner.py` | Scanner de ports TCP multi-thread |
-| `log_analyzer.py` | Analyse de logs SSH (detection brute-force) |
-| `banner_grab.py` | Banner grabbing sur services reseau |
+- [harmattan](https://github.com/Life-Is-Nothing/harmattan) — full network recon suite
+- [osint-toolkit](https://github.com/Life-Is-Nothing/osint-toolkit)
 
-## Usage
-```bash
-python port_scanner.py -t 127.0.0.1 -p 1-1024
-python log_analyzer.py -f /var/log/auth.log
-```
+## Author
 
-**Auteur :** [@ibramoha2](https://github.com/ibramoha2) | Niger
+Mohamed Adoungouss Ibrahim · [@Life-Is-Nothing](https://github.com/Life-Is-Nothing)
+
+## Ethics
+
+Authorized testing only.
